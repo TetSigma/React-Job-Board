@@ -1,0 +1,36 @@
+/* App.css */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Hide any overflowing content from the body */
+  }
+  
+  .app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the app container takes up at least the full viewport height */
+  }
+  
+  .content {
+    flex: 1; /* Allow the content to expand and fill the available space */
+    overflow-y: auto; /* Add a vertical scrollbar when content overflows */
+  }
+  
+  /* Style your footer as needed */
+  .footer {
+    background-color: black;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    display: none; /* Initially hide the footer */
+  }
+  
+  /* Style the scrollbar (optional) */
+  .content::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .content::-webkit-scrollbar-thumb {
+    background-color: #888;
+  }
+  

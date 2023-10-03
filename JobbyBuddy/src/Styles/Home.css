@@ -1,0 +1,79 @@
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    flex: 1;
+}
+
+.textWrapper{
+
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+.mainText {
+    width: 35ch;
+    overflow: hidden;
+    color: white;
+    font-size: 40px;
+    white-space: nowrap;
+    border-right: 4px solid orange;
+    animation: printed-text 2.5s steps(40),
+               flashin-border 2s step-start infinite;
+    animation-fill-mode: forwards; /* Freeze the animation at the end */
+  }
+
+@keyframes printed-text {
+    from {
+      width: 0%;
+    }
+  }
+  @keyframes printed-text{
+    from {
+      width: 0%;
+    }
+  }
+  @keyframes flashin-border {
+    0% {
+      border-color: transparent; /* Initially transparent */
+    }
+    50% {
+      border-color: orange;
+    }
+    100% {
+      border-color: transparent; /* Blink back to transparent */
+    }
+  }
+
+  .searchBarWrapper {
+    margin-top: 20px; /* Add some space between the text and the search bar */
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .searchBar {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1; /* Make the input expand to fill available space */
+    margin-right: 10px; /* Add some spacing between input and button */
+  }
+  
+  .searchButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  /* Additional styling for the search button, e.g., hover effects */
+  .searchButton:hover {
+    background-color: #0056b3;
+  }
