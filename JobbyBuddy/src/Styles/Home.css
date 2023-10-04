@@ -42,7 +42,7 @@
       border-color: transparent; /* Initially transparent */
     }
     50% {
-      border-color: orange;
+      border-color: #ff4500;
     }
     100% {
       border-color: transparent; /* Blink back to transparent */
@@ -59,21 +59,21 @@
   .searchBar {
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 2px;
     flex: 1; /* Make the input expand to fill available space */
     margin-right: 10px; /* Add some spacing between input and button */
   }
   
   .searchButton {
-    background-color: #007bff;
-    color: #fff;
+    background-color: black;
+    color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 2px;
     padding: 10px 20px;
     cursor: pointer;
   }
   
   /* Additional styling for the search button, e.g., hover effects */
   .searchButton:hover {
-    background-color: #0056b3;
+    background-color: #ff4500;
   }

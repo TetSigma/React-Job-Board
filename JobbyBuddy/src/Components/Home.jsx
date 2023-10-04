@@ -12,7 +12,7 @@ function Home() {
         <input
           type='text'
           className='searchBar'
-          placeholder='Search for jobs...'
+          placeholder='Search for job...'
         />
         <button className='searchButton'>Search</button>
       </div>
